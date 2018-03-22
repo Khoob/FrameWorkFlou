@@ -16,9 +16,9 @@ namespace fuzz {
 			const T max;
 			const T step;
 			const T size = (max - min) / step;
-			T values[100];
+			T values[];
 		public:
-			Shape() : min(0), max(10), step(1) {
+			Shape() : min(0), max(10), step(1), values(T[100]){
 				for (int i = 0; i < size; i++)
 				{
 					values[i] = 0;
