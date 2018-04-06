@@ -147,12 +147,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Agg.h" />
+    <ClInclude Include="AggMax.h" />
     <ClInclude Include="And.h" />
     <ClInclude Include="AndMin.h" />
     <ClInclude Include="AndMult.h" />
     <ClInclude Include="BinaryExpression.h" />
+    <ClInclude Include="BinaryExpressionModel.h" />
     <ClInclude Include="CogDefuzz.h" />
     <ClInclude Include="Expression.h" />
+    <ClInclude Include="ExpressionFactory.h" />
+    <ClInclude Include="FuzzyFactory.h" />
     <ClInclude Include="Is.h" />
     <ClInclude Include="IsTriangle.h" />
     <ClInclude Include="MamdaniDefuzz.h" />
@@ -163,7 +168,11 @@
     <ClInclude Include="OrPlus.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Then.h" />
+    <ClInclude Include="ThenMin.h" />
+    <ClInclude Include="ThenMult.h" />
     <ClInclude Include="UnaryExpression.h" />
+    <ClInclude Include="UnaryExpressionModel.h" />
     <ClInclude Include="ValueModel.h" />
   </ItemGroup>
   <ItemGroup>
