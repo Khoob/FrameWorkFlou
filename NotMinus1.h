@@ -6,11 +6,12 @@ namespace core {
 
 	template <class T>
 	class NotMinus1 : public Not<T> {
-		T evaluate(Expression<T>* o);
+		T evaluate(Expression<T>* o) const;
 	};
 
-	template <class T> T NotMinus1<T>::evaluate(Expression<T>* o) {
-		return o->evaluate();
+	template <class T> T NotMinus1<T>::evaluate(Expression<T>* o) const{
+		T ev = o->evaluate();
+		return 1 - ev;
 	}
 }
 #endif

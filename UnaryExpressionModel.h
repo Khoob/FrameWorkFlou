@@ -5,23 +5,32 @@
 namespace core {
 
 	template <class T>
-	class UnaryExpressionModel : UnaryExpression, Expression {
+	class UnaryExpressionModel :public UnaryExpression<T>, public Expression<T> {
 	private:
 
-		UnaryExpression<T> operator;
-		Expression<T> operand;
+		UnaryExpression<T>* _operator;
+		Expression<T>* operand;
 
 	public:
-		T evaluate(Expression* o) const;
+		UnaryExpressionModel(UnaryExpression<T>* ope = NULL, Expression<T>* exp = NULL);
+		T evaluate(Expression<T>* o) const;
 		T evaluate() const;
 	};
 
+	template <class T> UnaryExpressionModel<T>::UnaryExpressionModel(UnaryExpression<T>* ope, Expression<T>* exp)
+		:_operator(ope),operand(exp)
+	{}
+
 	template <class T> T UnaryExpressionModel<T>::evaluate() const {
-		if (operator != null) return evaluate(operand);
+		if (_operator != NULL) return evaluate(operand);
+		std::cout << "m";
+		return NULL;
 	}
 
-	template <class T> T UnaryExpressionModel<T>::evaluate(Expression* o) const {
-		if (operator != null) return operator.evaluate(o);
+	template <class T> T UnaryExpressionModel<T>::evaluate(Expression<T>* o) const {
+		if (_operator != NULL) return _operator->evaluate(o);
+		std::cout << "e";
+		return NULL;
 	}
 }
 

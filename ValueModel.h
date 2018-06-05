@@ -14,14 +14,12 @@ namespace core {
 
 		ValueModel();
 		ValueModel(T val);
-		//ValueModel(ValueModel<T>& val);
 
 		T evaluate() const;
 		void setValue(T val);
 	};
 	template <class T> ValueModel<T>::ValueModel() : value(0) {};
 	template <class T> ValueModel<T>::ValueModel(T val) : value(val) {}
-	//template <class T> ValueModel<T>::ValueModel(ValueModel<T>& val) : value(val.evaluate()) {}
 	template <class T> T ValueModel<T>::evaluate() const {
 		return value;
 	}
