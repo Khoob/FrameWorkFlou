@@ -11,7 +11,7 @@ namespace core
 	{
 	public:
 		NaryShadowExpression(NaryExpression<T>*);
-		T evaluate(std::vector<Expression<T>>) const;
+		T evaluate(std::vector<Expression<T>*>) const;
 		void takeTarget(NaryExpression<T>*);
 	private:
 		NaryExpression<T>* target;
@@ -31,7 +31,7 @@ namespace core
 	}
 
 	template <class T>
-	T NaryShadowExpression<T>::evaluate(std::vector<Expression<T>> e) const
+	T NaryShadowExpression<T>::evaluate(std::vector<Expression<T>*> e) const
 	{
 		if (target != NULL)
 			return target->evaluate(e);

@@ -28,7 +28,6 @@ namespace core {
 	T BinaryExpressionModel<T>::evaluate() const 
 	{
 		if (left != NULL && right != NULL) return evaluate(left, right);
-		std::cout << "r";
 		return NULL;
 	}
 
@@ -36,7 +35,6 @@ namespace core {
 	T BinaryExpressionModel<T>::evaluate(Expression<T>* l, Expression<T>* r) const 
 	{
 		if (_operator != NULL) return _operator->evaluate(l, r);
-		std::cout << "d";
 		return NULL;
 	}
 }

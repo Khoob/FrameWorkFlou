@@ -11,7 +11,7 @@ namespace fuzz {
 		std::vector<T> coeff;
 	public:
 		SugenoConclusion(std::vector<T>);
-		T evaluate(std::vector<Expression<T>>) const;
+		T evaluate(std::vector<Expression<T>*>) const;
 	};
 
 	template<class T>
@@ -20,17 +20,19 @@ namespace fuzz {
 	}
 
 	template<class T>
-	T SugenoConclusion<T>::evaluate(std::vector<Expression<T>> operands) const
+	T SugenoConclusion<T>::evaluate(std::vector<Expression<T>*> operands) const
 	{
-		if (coeff.size + 1 = operands.size) {
-			T conlusion;
+		if (coeff.size() - 1 == operands.size()) {
+			T conclusion = 0;
 			for (unsigned int i = 0; i < (operands.size() - 1); i++) {
-				conclusion += operands.at(i)*coeff.at(i);
+				T x = operands.at(i)->evaluate();
+				T y = coeff.at(i);
+				conclusion += x * y;
 			}
-			conclusion += coeff.back;
+			conclusion += coeff.back();
 			return conclusion;
 		}
-		std::cout << "mauvais nombre de coefficient ou d'operands";
+		std::cout << "Mauvais nombre de coefficients ou d'operandes";
 		return NULL;
 	}
 }

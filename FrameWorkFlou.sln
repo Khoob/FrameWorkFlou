@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FrameWorkFlou", "FrameWorkFlou.vcxproj", "{58477893-CED0-4DAA-A3A3-15860BA65F50}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "buffer", "..\..\..\visualStudio\c++\c++\buffer\buffer\buffer\buffer.vcxproj", "{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "circular_array", "..\..\..\visualStudio\c++\c++\buffer\buffer\circular_array\circular_array.vcxproj", "{FF797C0D-8511-48D0-A033-DC0387E6B210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +21,6 @@ Global
 		{58477893-CED0-4DAA-A3A3-15860BA65F50}.Release|x64.Build.0 = Release|x64
 		{58477893-CED0-4DAA-A3A3-15860BA65F50}.Release|x86.ActiveCfg = Release|Win32
 		{58477893-CED0-4DAA-A3A3-15860BA65F50}.Release|x86.Build.0 = Release|Win32
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Debug|x64.ActiveCfg = Debug|x64
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Debug|x64.Build.0 = Debug|x64
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Debug|x86.ActiveCfg = Debug|Win32
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Debug|x86.Build.0 = Debug|Win32
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Release|x64.ActiveCfg = Release|x64
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Release|x64.Build.0 = Release|x64
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Release|x86.ActiveCfg = Release|Win32
-		{FEED9E8A-1FA0-4D45-9F94-846D6F63181E}.Release|x86.Build.0 = Release|Win32
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Debug|x64.ActiveCfg = Debug|x64
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Debug|x64.Build.0 = Debug|x64
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Debug|x86.ActiveCfg = Debug|Win32
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Debug|x86.Build.0 = Debug|Win32
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Release|x64.ActiveCfg = Release|x64
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Release|x64.Build.0 = Release|x64
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Release|x86.ActiveCfg = Release|Win32
-		{FF797C0D-8511-48D0-A033-DC0387E6B210}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

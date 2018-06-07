@@ -33,7 +33,8 @@ namespace core
 	}
 
 	template <class T>
-	void BinaryShadowExpression<T>::takeTarget(BinaryExpression<T>*) {
+	void BinaryShadowExpression<T>::takeTarget(BinaryExpression<T>* t) {
+		target = t;
 	}
 
 }

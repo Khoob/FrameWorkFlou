@@ -20,7 +20,6 @@ namespace fuzz {
 
 	template <class T> T CogDefuzz<T>::defuzz(const typename Eval<T>::Shape &s)const 
 	{
-		//std::cout << "zut";
 		T x, y, num = 0, den = 0;
 		for (unsigned int i = 0; i<(s.first.size() - 1); i++)
 		{

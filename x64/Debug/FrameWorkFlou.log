@@ -1,0 +1,4 @@
+﻿  FrameWorkFlou.cpp
+c:\users\khoob\desktop\code\git\frameworkflou\frameworkflou.cpp(114): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\khoob\desktop\code\git\frameworkflou\frameworkflou.cpp(115): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  FrameWorkFlou.vcxproj -> C:\Users\Khoob\Desktop\Code\Git\FrameWorkFlou\x64\Debug\FrameWorkFlou.exe

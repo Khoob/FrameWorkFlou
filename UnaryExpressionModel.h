@@ -23,13 +23,11 @@ namespace core {
 
 	template <class T> T UnaryExpressionModel<T>::evaluate() const {
 		if (_operator != NULL) return evaluate(operand);
-		std::cout << "m";
 		return NULL;
 	}
 
 	template <class T> T UnaryExpressionModel<T>::evaluate(Expression<T>* o) const {
 		if (_operator != NULL) return _operator->evaluate(o);
-		std::cout << "e";
 		return NULL;
 	}
 }
